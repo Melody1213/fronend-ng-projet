@@ -1,0 +1,13 @@
+<p>menu works!</p>
+<nav>
+    <a routerLink="/">Acceuil</a>
+    <a routerLink="/connexion"> Se connecter</a>
+    <a routerLink="/contact">Contact</a>
+    <a *ngIf="!auth.isLoggedin" routerLink="/connexion">Se connecter</a>
+    <a *ngIf="auth.isLoggedin" routerLink="/"  (click)="auth.logout()">Deconnexion</a> 
+    <a routerLink="/evenements">Evénements</a>
+    <a routerLink="/inscription">M'inscrire</a>
+    <a routerLink="/mentions">Mentions</a>
+    <a routerLink="/profil">My Profile</a>
+    <a routerLink="/users">Users</a>
+  </nav>
