@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cy2023-icc": {
+      "hosting": {
+        "frontend-ng-projet": [
+          "cy2023-icc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cy2023-icc"
+  }
+}

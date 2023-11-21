@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "frontend-ng-projet",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

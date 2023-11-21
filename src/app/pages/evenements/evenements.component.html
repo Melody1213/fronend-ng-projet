@@ -1,6 +1,9 @@
 <p>evenements works!</p>
 <section>
     <h1>Les utilisateurs</h1>
+
+    <input type="text" [(ngModel)]="searchKeyword" placeholder="Search events">
+
     <table>
         <thead>
             <tr>
@@ -12,7 +15,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let u of events.listeEvenements">
+            <tr *ngFor="let u of events.listeEvenements | events:searchKeyword">
                 <td>{{ u.titre }}</td>
                 <td>{{ u.places }}</td>
                 <td>{{ u.horaires.debut }}</td>
