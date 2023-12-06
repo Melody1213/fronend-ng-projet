@@ -1,6 +1,7 @@
-Projet de Mengdie YE
-Identifiant :admin@admin.com
-Mot de passe:admin
+# Projet de Mengdie YE
+# In order to log in 
+- Identifiant :admin@admin.com
+- Mot de passe:admin
 # FrontendNgProjet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
