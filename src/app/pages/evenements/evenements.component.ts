@@ -9,11 +9,10 @@ import { EvenementsService } from 'src/app/shared/services/evenements.service';
 })
 export class EvenementsComponent {
   constructor(public events:EvenementsService){}
-  listevents: Array<EvenementI> =[]
+  // listevents: Array<EvenementI>;
 
   searchKeyword: string='';
   
  
 
 }
-

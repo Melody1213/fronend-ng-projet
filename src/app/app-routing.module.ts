@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OrganisationModule } from './organisation/organisation.module';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -10,6 +11,7 @@ import { LegalsComponent } from './pages/legals/legals.component';
 import { ProfilComponent } from './pages/profil/profil.component';
 import { UsersComponent } from './pages/users/users.component';
 import { authGuard } from './shared/securite/auth.guard';
+
 const routes: Routes = [
   {path:'', component:AccueilComponent},
   {path:'connexion', component:ConnexionComponent},
@@ -20,7 +22,14 @@ const routes: Routes = [
   {path:'mentions', component:LegalsComponent},
   {path:'profil', component:ProfilComponent},
   {path:'users', component:UsersComponent},
-
+  {
+    path: 'organisation',
+    loadChildren: () =>
+      import('./organisation/organisation.module').then(
+        (m) => m.OrganisationModule
+      ),
+    canActivate: [authGuard],
+  },
 ];
 
 @NgModule({

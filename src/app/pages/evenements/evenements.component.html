@@ -1,8 +1,10 @@
 <p>evenements works!</p>
 <section>
-    <h1>Les utilisateurs</h1>
+    <h1>Les Événements de CY Tech</h1>
 
     <input type="text" [(ngModel)]="searchKeyword" placeholder="Search events">
+   
+
 
     <table>
         <thead>
@@ -15,13 +17,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let u of events.listeEvenements | events:searchKeyword">
-                <td>{{ u.titre }}</td>
+            <tr *ngFor="let u of events.events | events:searchKeyword">
+                <td>{{ u.titre }}</td>  
                 <td>{{ u.places }}</td>
                 <td>{{ u.horaires.debut }}</td>
                 <td>{{ u.horaires.fin }}</td>
                 <td>{{ u.date }}</td>
             </tr>
         </tbody>
-    </table>
+   
+    </table>    
+
+
 </section>

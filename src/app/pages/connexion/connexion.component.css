@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.example-full-width {
+    width: 100%;
+    
+    
+}
+  
+  /* Centrer le contenu de la section */
+section {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    /* min-height: 100vh; Assurez-vous que la section prend toute la hauteur de la vue */
+  }
+  
+  /* Styles pour le formulaire */
+  .identity {
+    width: 100%; /* ou une largeur fixe si vous préférez */
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage supplémentaire si Flexbox ne fonctionne pas */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optionnel : pour un peu d'ombre autour du formulaire */
+    background-color: white; /* Fond blanc pour le formulaire */
+  }
+  

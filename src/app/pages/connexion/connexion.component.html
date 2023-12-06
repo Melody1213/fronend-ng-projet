@@ -1,18 +1,22 @@
+  
 <p>connexion works!</p>
 <section>
-    <form (submit)="onSubmit()">
-        <fieldset>
-            <label>Votre identifiant</label>
-            <input name="id" placeholder="Saisissez votre identifiant" [(ngModel)]="auth.authID.id" required>
-        </fieldset>
-        <fieldset>
-            <label>Votre mot de passe</label>
-            <input name="mdp" type="password" placeholder="Saisissez votre mot de passe" [(ngModel)]="auth.authID.mdp" required>
-        </fieldset>
-        <button>Envoyer</button>
-        <button type="reset">Annuler</button>
-    </form>
-    </section>
+    <form (submit)="onSubmit()" class="identity">
+        <mat-form-field class="example-full-width">
+            <!-- <mat-label>Votre Identifiant</mat-label> -->
+            <input matInput   placeholder="admin" name="id" [(ngModel)]="auth.authID.id" required>
+        </mat-form-field>
 
+        <mat-form-field class="example-full-width">
+            <!-- <mat-label>Votre mot de passe</mat-label> -->
+            <input matInput type="password" placeholder="admin" name="mdp" [(ngModel)]="auth.authID.mdp" required>    
+        </mat-form-field>
+        <div>
+            <button  mat-raised-button color="primary" >Envoyer</button>
+            <button mat-raised-button color="warn" type="reset">Annuler</button>
+        </div>
+    </form>
+</section>
+    
 
       
